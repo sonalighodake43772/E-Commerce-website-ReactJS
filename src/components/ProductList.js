@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 
-    const dummy_meals = [
+    const dummy_product = [
         
          
         
@@ -43,14 +43,14 @@ import ProductCard from './ProductCard';
        }
       ];
       const ProductList= () => {
-        const productlist = dummy_meals.map((meals) => (
+        const productlist = dummy_product.map((product) => (
           <ProductCard
-          id={meals.id}
-            key={meals.id}
-            name={meals.name}
-            description={meals.description}
-            price={meals.price}
-            pimage={meals.pimage}
+          id={product.id}
+            key={product.id}
+            name={product.name}
+            description={product.description}
+            price={product.price}
+            pimage={product.pimage}
 
           />
         ));
